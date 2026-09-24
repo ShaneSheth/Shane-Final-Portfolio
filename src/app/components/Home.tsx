@@ -4,7 +4,7 @@ import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 
 export function Home() {
   const handleDownloadResume = () => {
-    window.open("https://drive.google.com/file/d/1sGuy9umH4jYnfi1S-bTsStLhI0VJTlpF/view?usp=sharing", "_blank");
+    window.open("/Shane-Sheth-Resume.pdf", "_blank");
   };
 
   return (
