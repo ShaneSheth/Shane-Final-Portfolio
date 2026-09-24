@@ -34,7 +34,7 @@ export function Teams() {
               <p className="text-neutral-600 leading-relaxed">
                 Leading high-level aircraft configuration decisions for the current design cycle, including aircraft architecture, wing and payload positioning, propulsion, tail, and fuselage configuration. I also own full-aircraft CAD integration and work across subsystem constraints to develop a manufacturable aircraft layout.
               </p>
-              <Link to="/teams/usc-aerodesign/2026-2027">
+              <Link to="/teams/usc-aerodesign-2026-2027">
                 <Button variant="outline">See More</Button>
               </Link>
             </div>
@@ -45,7 +45,7 @@ export function Teams() {
               <p className="text-neutral-600 leading-relaxed">
                 Worked on structural design, manufacturing, testing, and aircraft integration for the 2026 competition aircraft, including empennage redesign, composite fabrication, passenger-restraint testing, and materials characterization.
               </p>
-              <Link to="/teams/usc-aerodesign/2025-2026">
+              <Link to="/teams/usc-aerodesign-2025-2026">
                 <Button variant="outline">See More</Button>
               </Link>
             </div>
