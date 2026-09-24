@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router";
 import { ArrowLeft, FileText } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
+import { ADTYearDetail } from "@/app/components/ADTYearDetail";
 
 interface TeamDetailData {
   id: string;
@@ -33,6 +34,14 @@ const teamDetails: Record<string, TeamDetailData> = {
 export function TeamDetail() {
   const { teamId } = useParams<{ teamId: string }>();
   
+  if (teamId === "usc-aerodesign-2026-2027") {
+    return <ADTYearDetail year="2026-2027" />;
+  }
+
+  if (teamId === "usc-aerodesign-2025-2026") {
+    return <ADTYearDetail year="2025-2026" />;
+  }
+
   const team = teamId ? teamDetails[teamId] : null;
 
   if (!team) {
