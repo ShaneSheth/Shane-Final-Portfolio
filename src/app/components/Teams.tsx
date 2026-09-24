@@ -14,7 +14,7 @@ export function Teams() {
             <div className="space-y-4">
               <h2 className="text-4xl">USC AeroDesign Team (ADT)</h2>
               <p className="text-neutral-600 leading-relaxed text-lg">
-                USC AeroDesign is a student-led team that designs, builds, and flies radio-controlled aircraft for the annual AIAA Design/Build/Fly competition. My work has progressed from structures and manufacturing into aircraft-level configuration and systems integration.
+                The USC AeroDesign Team (ADT) is a student-led organization that designs, builds, and flies radio-controlled aircraft for the annual AIAA Design/Build/Fly (DBF) competition. My work has progressed from structures and manufacturing into aircraft-level design and configuration.
               </p>
             </div>
 
