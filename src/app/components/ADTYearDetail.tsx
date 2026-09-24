@@ -24,7 +24,7 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
           <p className="text-xl text-neutral-600 leading-relaxed">
             {isCurrent
               ? "For the current design cycle, I lead aircraft-level configuration decisions and full-aircraft CAD integration, balancing aerodynamic, structural, payload, performance, landing-gear, and manufacturing constraints as the aircraft architecture develops."
-              : "During the 2025–2026 design cycle, I worked across structures, manufacturing, testing, avionics, payload systems, and aircraft integration for the competition aircraft."}
+              : "During the 2025–2026 competition year, I worked across structures, manufacturing, avionics, payload systems, and testing/integration for the aircraft."}
           </p>
         </div>
 
@@ -81,37 +81,19 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
           </>
         ) : (
           <>
-            <section className="space-y-6">
-              <h2 className="text-3xl">2025-2026 AIAA DBF Competition Report</h2>
-              <div className="space-y-6">
-                <div className="w-full aspect-[8.5/11] rounded-xl overflow-hidden shadow-lg">
-                  <iframe
-                    src="https://drive.google.com/file/d/1kAAH67B1RE1aVG333G9MxicMsPLXQ6i-/preview"
-                    allowFullScreen
-                    allow="fullscreen"
-                    className="w-full h-full"
-                    style={{ border: "none" }}
-                  />
-                </div>
-                <div className="text-center">
-                  <a
-                    href="https://drive.google.com/file/d/1kAAH67B1RE1aVG333G9MxicMsPLXQ6i-/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="outline">
-                      <FileText className="w-4 h-4 mr-2" />
-                      Open PDF in New Tab
-                    </Button>
-                  </a>
-                </div>
-              </div>
-            </section>
-
             <section className="space-y-8">
               <h2 className="text-3xl">Experience</h2>
 
               <div className="space-y-6">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold">Structures</h3>
+                  <ul className="space-y-2 text-neutral-600 leading-relaxed">
+                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Led 10 validation tests for a passenger restraint system on a 1:1 testbed with a FoS of 1.5, by deriving an 8 G maximum load factor from flight-test data and comparing multiple restraint designs to recommend the final configuration, verifying zero measurable passenger displacement required for aircraft acceptance during competition technical inspection.</span></li>
+                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Co-authored 2 sections in the 1st place 2026 AIAA Design/Build/Fly competition report detailing payload design decisions, testing methodologies, and experimental results.</span></li>
+                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Redesigned the empennage from 3 separate components into a singular structure mounted to the tail boom at 2 locations, simplifying aircraft integration and improving load transfer through fiberglass-plywood sandwich hardpoints and extended vertical stabilizer spars adhering into the horizontal stabilizer root rib. Incorporated a 4° horizontal stabilizer AoI and tail fairing to minimize interference drag. Reduced empennage weight by 9.5% on aircraft highly sensitive to empty weight by designing structurally determined weight cutouts, minimizing integration hardware, and replacing CF D-box skin with 1/32” balsa.</span></li>
+                  </ul>
+                </div>
+
                 <div className="space-y-3">
                   <h3 className="text-xl font-semibold">Aircraft Design, Manufacturing, and Systems Integration</h3>
                   <ul className="space-y-2 text-neutral-600 leading-relaxed">
@@ -139,13 +121,32 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
                     <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Designed multiple test articles for the aircraft passenger restraint system used in payload safety validation.</span></li>
                   </ul>
                 </div>
+              </div>
+            </section>
 
-                <div className="space-y-3">
-                  <h3 className="text-xl font-semibold">Structures & Materials Testing</h3>
-                  <ul className="space-y-2 text-neutral-600 leading-relaxed">
-                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Led carbon fiber materials testing in collaboration with the Structures Lead, researching ASTM testing standards and developing procedures to characterize composite material strength under multiple loading conditions.</span></li>
-                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Conducted validation testing of the passenger restraint system on a full-scale test bed, contributing testing methods and results to the 2026 AIAA Design/Build/Fly report.</span></li>
-                  </ul>
+            <section className="space-y-6">
+              <h2 className="text-3xl">2025-2026 AIAA DBF Competition Report</h2>
+              <div className="space-y-6">
+                <div className="w-full aspect-[8.5/11] rounded-xl overflow-hidden shadow-lg">
+                  <iframe
+                    src="https://drive.google.com/file/d/1kAAH67B1RE1aVG333G9MxicMsPLXQ6i-/preview"
+                    allowFullScreen
+                    allow="fullscreen"
+                    className="w-full h-full"
+                    style={{ border: "none" }}
+                  />
+                </div>
+                <div className="text-center">
+                  <a
+                    href="https://drive.google.com/file/d/1kAAH67B1RE1aVG333G9MxicMsPLXQ6i-/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline">
+                      <FileText className="w-4 h-4 mr-2" />
+                      Open PDF in New Tab
+                    </Button>
+                  </a>
                 </div>
               </div>
             </section>
