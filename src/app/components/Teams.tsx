@@ -2,73 +2,105 @@ import { Link } from "react-router";
 import { Button } from "@/app/components/ui/button";
 import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 
-interface Team {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  hasDetail?: boolean;
-}
-
-const teams: Team[] = [
-  {
-    id: "usc-aerodesign",
-    title: "USC AeroDesign Team (ADT)",
-    description: "The USC AeroDesign Team is a student-led engineering design team that designs, builds, and flies radio-controlled aircraft for the annual AIAA Design/Build/Fly competition. The team provides a hands-on environment where students apply concepts from aerodynamics, structures, electronics, and systems integration to develop a fully functional aircraft over the course of an academic year. Members work through the complete engineering cycle—from conceptual design and analysis to manufacturing, testing, and flight operations—while collaborating across multiple engineering disciplines. The team has been active for over 25 years and has achieved multiple first-place finishes and consistent top placements in international competition.",
-    image: "https://i.imgur.com/3vK8WB5.jpg",
-    hasDetail: true,
-  },
-  {
-    id: "cove-terra-labs",
-    title: "Cove [Terra Labs]",
-    description: "A 'Jarvis'-like robotic arm with 7 degrees of freedom (DOF) that autonomously serves drinks and small food items from its station. Designed to interact with guests through friendly, understandable gestures. Translates voice commands into smooth, safe arm motions ('voice-to-motion') for intuitive control.",
-    image: "https://i.imgur.com/jejirMp.jpg",
-    hasDetail: true,
-  },
-  {
-    id: "terraport-terra-labs",
-    title: "Terraport [Terra Labs]",
-    description: "Mobile workstation for Terra Labs members. It is a mini shipping container that unfolds on itself to reveal storage, tables, tools, machines, and seats.",
-    image: "https://i.imgur.com/LWyLFhF.jpg",
-    hasDetail: true,
-  },
-];
-
 export function Teams() {
   return (
     <div className="min-h-screen py-32 px-8">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl mb-16">My Teams</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {teams.map((team) => (
-            <div key={team.id} className="space-y-4">
-              <h2 className="text-2xl">
-                {team.title}
-              </h2>
-              
+      <div className="max-w-7xl mx-auto space-y-20">
+        <h1 className="text-5xl">Teams</h1>
+
+        {/* USC AeroDesign Team */}
+        <section className="space-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-10 items-center">
+            <div className="space-y-4">
+              <h2 className="text-4xl">USC AeroDesign Team (ADT)</h2>
+              <p className="text-neutral-600 leading-relaxed text-lg">
+                USC AeroDesign is a student-led team that designs, builds, and flies radio-controlled aircraft for the annual AIAA Design/Build/Fly competition. My work has progressed from structures and manufacturing into aircraft-level configuration and systems integration.
+              </p>
+            </div>
+
+            <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-neutral-200">
+              <ImageWithFallback
+                src="https://i.imgur.com/3vK8WB5.jpg"
+                alt="USC AeroDesign Team"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="rounded-2xl border border-neutral-200 p-8 space-y-4 bg-white">
+              <p className="text-sm uppercase tracking-wide text-neutral-500">2026–2027</p>
+              <h3 className="text-2xl">Configurations Lead</h3>
+              <p className="text-neutral-600 leading-relaxed">
+                Leading high-level aircraft configuration decisions for the current design cycle, including aircraft architecture, wing and payload positioning, propulsion, tail, and fuselage configuration. I also own full-aircraft CAD integration and work across subsystem constraints to develop a manufacturable aircraft layout.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-neutral-200 p-8 space-y-4 bg-white">
+              <p className="text-sm uppercase tracking-wide text-neutral-500">2025–2026</p>
+              <h3 className="text-2xl">Structures Engineer</h3>
+              <p className="text-neutral-600 leading-relaxed">
+                Worked on structural design, manufacturing, testing, and aircraft integration for the 2026 competition aircraft, including empennage redesign, composite fabrication, passenger-restraint testing, and materials characterization.
+              </p>
+            </div>
+          </div>
+
+          <Link to="/teams/usc-aerodesign">
+            <Button variant="outline">See More</Button>
+          </Link>
+        </section>
+
+        {/* Terra Labs */}
+        <section className="space-y-8">
+          <div className="space-y-4">
+            <h2 className="text-4xl">Terra Labs</h2>
+            <p className="text-neutral-600 leading-relaxed text-lg max-w-4xl">
+              Terra Labs is a student engineering organization focused on building ambitious hardware projects. My work has included electrical systems development for Cove and mechanical design and manufacturing for Terraport.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="space-y-5">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-neutral-200">
                 <ImageWithFallback
-                  src={team.image}
-                  alt={team.title}
+                  src="https://i.imgur.com/jejirMp.jpg"
+                  alt="Cove robotic arm"
                   className="w-full h-full object-cover"
                 />
               </div>
-              
-              <p className="text-neutral-600 leading-relaxed">
-                {team.description}
-              </p>
-              
-              {team.hasDetail && (
-                <Link to={`/teams/${team.id}`}>
-                  <Button variant="outline" className="mt-2">
-                    See More
-                  </Button>
+              <div className="space-y-3">
+                <p className="text-sm uppercase tracking-wide text-neutral-500">Cove</p>
+                <h3 className="text-2xl">Electrical Systems Co-Lead</h3>
+                <p className="text-neutral-600 leading-relaxed">
+                  Developing electrical architecture for a 7-DOF autonomous robotic arm, including power distribution, CAN communication, wiring, connector and fuse sizing, and hardware emergency-stop integration.
+                </p>
+                <Link to="/teams/cove-terra-labs">
+                  <Button variant="outline">See More</Button>
                 </Link>
-              )}
+              </div>
             </div>
-          ))}
-        </div>
+
+            <div className="space-y-5">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-neutral-200">
+                <ImageWithFallback
+                  src="https://i.imgur.com/LWyLFhF.jpg"
+                  alt="Terraport mobile workstation"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="space-y-3">
+                <p className="text-sm uppercase tracking-wide text-neutral-500">Terraport</p>
+                <h3 className="text-2xl">Mechanical Design</h3>
+                <p className="text-neutral-600 leading-relaxed">
+                  Contributed to the design and manufacturing of a mobile workstation that unfolds into storage, work surfaces, tools, and seating, using collaborative CAD and hands-on fabrication.
+                </p>
+                <Link to="/teams/terraport-terra-labs">
+                  <Button variant="outline">See More</Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
