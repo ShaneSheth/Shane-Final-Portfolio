@@ -11,7 +11,7 @@ export function Home() {
     <div className="min-h-screen flex items-center justify-center px-8 py-20 relative">
       <div className="absolute top-8 left-8">
         <p className="text-5xl text-neutral-900 text-center">
-          Welcome to Shane's Portfolio!
+          Welcome to Shameful Portfolio!
         </p>
       </div>
       
