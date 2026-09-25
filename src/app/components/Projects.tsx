@@ -49,6 +49,7 @@ const projects: Project[] = [
     title: "Surfboard Design",
     year: "2024–2025",
     description: "Designed and built two hard-top surfboards from EPS foam, shaping the rocker, rails, nose, tail, and bottom contours before completing fiberglass layups and integrating fins and leash hardware. Applied lessons from the first build to improve rail conformity, symmetry, fiberglass quality, and overall finish on the second board.",
+    image: "https://i.imgur.com/D52Ky0J.jpg",
     hasDetail: true,
   },
   {
