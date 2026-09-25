@@ -49,6 +49,7 @@ const projects: Project[] = [
     title: "Surfboard Design",
     year: "2024–2025",
     description: "Designed and built two hard-top surfboards from EPS foam, shaping the rocker, rails, nose, tail, and bottom contours before completing fiberglass layups and integrating fins and leash hardware. Applied lessons from the first build to improve rail conformity, symmetry, fiberglass quality, and overall finish on the second board.",
+    hasDetail: true,
   },
   {
     id: "bridge-design",
@@ -72,6 +73,7 @@ const projects: Project[] = [
     year: "2022–2025",
     description: "Member of my high school Aerospace Club beginning sophomore year, later serving as Vice President. The club's primary focus was competition in the American Rocketry Challenge, the largest student rocketry competition in the United States. Competed on a select 10-member team during junior and senior years, contributing to motor selection calculations, mass distribution analysis, and stability considerations for competition rockets. Also served as team lead for a secondary competition rocket, coordinating fabrication, testing, and iteration while supporting logistics and mentoring newer members in fundamental aerospace design and build practices.",
     image: "https://i.imgur.com/NqXC3X9.jpeg",
+    hasDetail: true,
   },
 ];
 
