@@ -6,8 +6,8 @@ export function Navigation() {
   const links = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
-    { path: "/projects", label: "Projects" },
     { path: "/teams", label: "Teams" },
+    { path: "/projects", label: "Projects" },
     { path: "/contact", label: "Contact" },
   ];
   
