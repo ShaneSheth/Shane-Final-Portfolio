@@ -45,7 +45,7 @@ export function Home() {
 
               <div className="pt-3 space-y-3">
                 <p className="text-sm uppercase tracking-wide text-neutral-500">Resume</p>
-                <div className="max-w-md w-full aspect-[8.5/11] rounded-xl overflow-hidden border border-neutral-200 bg-white shadow-md">
+                <div className="max-w-lg w-full aspect-[8.5/11] rounded-xl overflow-hidden border border-neutral-200 bg-white shadow-md">
                   <iframe
                     src="/Shane-Sheth-Resume.pdf#view=FitH"
                     title="Shane Sheth Resume"
