@@ -43,17 +43,18 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
               <h2 className="text-3xl">Current Work</h2>
               <div className="space-y-6">
                 <div className="space-y-3">
-                  <h3 className="text-xl font-semibold">Aircraft Configuration</h3>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Leading aircraft-level downselects for architecture, wing position, payload layout, propulsion, tail configuration, and fuselage configuration while coordinating inputs from each subsystem.
-                  </p>
+                  <h3 className="text-xl font-semibold">Aircraft Configuration & Airframe Design</h3>
+                  <ul className="space-y-2 text-neutral-600 leading-relaxed">
+                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Lead high-level aircraft configuration downselects for a 30+ member design team, determining aircraft architecture, wing and payload positioning, and propulsion, tail, and fuselage configuration.</span></li>
+                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Designed the aircraft outer mold line by balancing aerodynamic, structural, performance, landing-gear, and payload requirements, and determining tradeoffs to blend competing subsystem constraints into a single manufacturable airframe.</span></li>
+                  </ul>
                 </div>
 
                 <div className="space-y-3">
                   <h3 className="text-xl font-semibold">Full-Aircraft CAD & Integration</h3>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Owning the full-aircraft SolidWorks assembly and integrating subsystem geometry into a common aircraft layout that can be released for structural design, tooling, and manufacturing.
-                  </p>
+                  <ul className="space-y-2 text-neutral-600 leading-relaxed">
+                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Owned full-aircraft CAD integration through the complete design cycle, assembling 7 aircraft subsystems in SolidWorks and translating finalized geometry into build drawings, laser-cut documents, and molds for manufacturing.</span></li>
+                  </ul>
                 </div>
 
                 <div className="space-y-3">
@@ -72,12 +73,6 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
               </div>
             </section>
 
-            <section className="space-y-6">
-              <h2 className="text-3xl">2026–2027 Competition Report</h2>
-              <div className="rounded-2xl border border-dashed border-neutral-300 p-10 text-center text-neutral-500">
-                The competition report will be added here once it is available.
-              </div>
-            </section>
           </>
         ) : (
           <>
