@@ -26,6 +26,7 @@ const projects: Project[] = [
     year: "2025–2026",
     description: "An engineering and art installation that breaks down the composition of music into the individual instruments. Viewers can walk through 5 different sections in a guitar shaped layout corresponding to a separate instrument. We designed a system of photoelectric through-beam sensors connected to esc that, when tripped, activates the lighting and music for that section.",
     image: "https://i.imgur.com/AuFMNKy.png",
+    hasDetail: true,
   },
   {
     id: "firefighting-aircraft",
