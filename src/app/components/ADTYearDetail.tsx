@@ -139,9 +139,14 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
             <section className="space-y-6">
               <div className="space-y-2">
                 <h2 className="text-3xl">Mass Properties & Balancing</h2>
-                <p className="text-neutral-600 leading-relaxed">
-                  Balancing spreadsheet used to track component masses and locations, center of gravity, and static margin as the aircraft configuration developed.
-                </p>
+                <div className="space-y-4 text-neutral-600 leading-relaxed">
+                  <p>
+                    I use a balancing spreadsheet to evaluate aircraft mass distribution across different mission configurations. The sheet calculates each component’s moment about a common aircraft node and sums those moments to determine the aircraft center of gravity. Variable cells represent mission-dependent payload and component configurations, allowing multiple missions to be evaluated within one model rather than using separate spreadsheets. I use the sheet to adjust component placement to achieve the target CG and static margin while also adjusting nose length and minimizing required ballast.
+                  </p>
+                  <p>
+                    Early component weights are estimated by comparing surface-area-to-weight ratios from previous aircraft with the current geometry. As the configuration develops, updated mass and location estimates are used to continually reassess aircraft balance and packaging.
+                  </p>
+                </div>
               </div>
 
               <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
