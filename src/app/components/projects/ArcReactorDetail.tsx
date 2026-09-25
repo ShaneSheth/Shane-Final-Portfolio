@@ -14,7 +14,7 @@ export function ArcReactorDetail() {
           </Button>
         </Link>
 
-        <h1 className="text-5xl mb-8">Arc Reactor Pro</h1>
+        <h1 className="text-5xl mb-8">Tony Stark Arc Reactor Prop</h1>
 
         <div className="space-y-12">
           <section>
