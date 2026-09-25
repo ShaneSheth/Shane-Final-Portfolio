@@ -17,7 +17,7 @@ const projects: Project[] = [
     title: "Experience Synesthesia",
     year: "2025–2026",
     description: "An engineering and art installation exploring how we can blend auditory and visual senses for the Artscape Art Show in collaboration with the USC Performing Arts Committee (PAC). Designed interactive DJ podiums where audiences could alter music in real time while generating evolving projected artwork. Kerf bent ACX wood exterior provides organic shape, adding to the immersive experience. This project integrated dynamic lighting, engraved tactile surfaces, and multi-station interaction to create an experience inspired by synesthetic perception.",
-    image: "https://i.imgur.com/X4Z9FhY.png",
+    image: "https://i.imgur.com/HvekvY4.png",
     hasDetail: true,
   },
   {
