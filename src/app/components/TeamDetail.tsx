@@ -207,21 +207,22 @@ export function TeamDetail() {
               <h2 className="text-3xl">Project Photos & Videos</h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="w-full aspect-[4/3] rounded-xl overflow-hidden border border-neutral-200 bg-black">
-                  <iframe
-                    src="https://imgur.com/92RngGw/embed"
-                    title="Cove project media"
-                    className="w-full h-full"
-                    allow="fullscreen"
+                <div className="aspect-[4/3] rounded-xl overflow-hidden bg-neutral-200">
+                  <img
+                    src="https://i.imgur.com/92RngGw.jpg"
+                    alt="Cove project photo"
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="w-full aspect-[4/3] rounded-xl overflow-hidden border border-neutral-200 bg-black">
-                  <iframe
-                    src="https://imgur.com/DenVLk4/embed"
-                    title="Cove project media"
-                    className="w-full h-full"
-                    allow="fullscreen"
-                  />
+                <div className="aspect-[4/3] rounded-xl overflow-hidden bg-black">
+                  <video
+                    controls
+                    playsInline
+                    className="w-full h-full object-cover"
+                    src="https://i.imgur.com/DenVLk4.mp4"
+                  >
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
