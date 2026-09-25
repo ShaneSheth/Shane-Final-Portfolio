@@ -10,47 +10,54 @@ export function Teams() {
 
         {/* USC AeroDesign Team */}
         <section className="space-y-8">
-          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-10 items-center">
-            <div className="space-y-4">
-              <h2 className="text-4xl">USC AeroDesign Team (ADT)</h2>
-              <p className="text-neutral-600 leading-relaxed text-lg">
-                The USC AeroDesign Team (ADT) is a student-led organization that designs, builds, and flies radio-controlled aircraft for the annual AIAA Design/Build/Fly (DBF) competition. My work has progressed from structures and manufacturing into aircraft-level design and configuration.
-              </p>
-            </div>
-
-            <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-neutral-200">
-              <ImageWithFallback
-                src="https://i.imgur.com/3vK8WB5.jpg"
-                alt="USC AeroDesign Team"
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <div className="space-y-4">
+            <h2 className="text-4xl">USC AeroDesign Team (ADT)</h2>
+            <p className="text-neutral-600 leading-relaxed text-lg max-w-4xl">
+              The USC AeroDesign Team (ADT) is a student-led organization that designs, builds, and flies radio-controlled aircraft for the annual AIAA Design/Build/Fly (DBF) competition. My work has progressed from structures and manufacturing into aircraft-level design and configuration.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-2xl border border-neutral-200 p-8 space-y-4 bg-white">
-              <p className="text-sm uppercase tracking-wide text-neutral-500">2026–2027</p>
-              <h3 className="text-2xl">Configurations Lead</h3>
-              <p className="text-neutral-600 leading-relaxed">
-                Leading high-level aircraft configuration decisions for the current design cycle, including aircraft architecture, wing and payload positioning, propulsion, tail, and fuselage configuration. I also own full-aircraft CAD integration and work across subsystem constraints to develop a manufacturable aircraft layout.
-              </p>
-              <Link to="/teams/usc-aerodesign-2026-2027">
-                <Button variant="outline">See More</Button>
-              </Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="space-y-5">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-neutral-200">
+                <ImageWithFallback
+                  src="https://i.imgur.com/3vK8WB5.jpg"
+                  alt="USC AeroDesign Team"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="space-y-3">
+                <p className="text-sm uppercase tracking-wide text-neutral-500">2026–2027</p>
+                <h3 className="text-2xl">Configurations Lead</h3>
+                <p className="text-neutral-600 leading-relaxed">
+                  Leading high-level aircraft configuration decisions for the current design cycle, including aircraft architecture, wing and payload positioning, propulsion, tail, and fuselage configuration. I also own full-aircraft CAD integration and work across subsystem constraints to develop a manufacturable aircraft layout.
+                </p>
+                <Link to="/teams/usc-aerodesign-2026-2027">
+                  <Button variant="outline">See More</Button>
+                </Link>
+              </div>
             </div>
 
-            <div className="rounded-2xl border border-neutral-200 p-8 space-y-4 bg-white">
-              <p className="text-sm uppercase tracking-wide text-neutral-500">2025–2026</p>
-              <h3 className="text-2xl">Structures Engineer</h3>
-              <p className="text-neutral-600 leading-relaxed">
-                Worked on structural design, manufacturing, testing, and aircraft integration for the 2026 competition aircraft, including empennage redesign, composite fabrication, passenger-restraint testing, and materials characterization.
-              </p>
-              <Link to="/teams/usc-aerodesign-2025-2026">
-                <Button variant="outline">See More</Button>
-              </Link>
+            <div className="space-y-5">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-neutral-200">
+                <ImageWithFallback
+                  src="https://i.imgur.com/3vK8WB5.jpg"
+                  alt="USC AeroDesign Team"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="space-y-3">
+                <p className="text-sm uppercase tracking-wide text-neutral-500">2025–2026</p>
+                <h3 className="text-2xl">Structures Engineer</h3>
+                <p className="text-neutral-600 leading-relaxed">
+                  Worked on structural design, manufacturing, testing, and aircraft integration for the 2026 competition aircraft, including empennage redesign, composite fabrication, passenger-restraint testing, and materials characterization.
+                </p>
+                <Link to="/teams/usc-aerodesign-2025-2026">
+                  <Button variant="outline">See More</Button>
+                </Link>
+              </div>
             </div>
           </div>
-
         </section>
 
         {/* Terra Labs */}
