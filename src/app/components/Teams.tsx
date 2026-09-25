@@ -52,7 +52,7 @@ export function Teams() {
               </p>
             </div>
             <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-neutral-200">
-              <ImageWithFallback src="https://i.imgur.com/jejirMp.jpg" alt="Terra Labs Cove robotic arm" className="w-full h-full object-cover" />
+              <ImageWithFallback src="https://i.imgur.com/wiKtc2k.jpg" alt="Terra Labs Cove robotic arm" className="w-full h-full object-cover" />
             </div>
           </div>
 
