@@ -10,8 +10,7 @@ export function Teams() {
 
         {/* USC AeroDesign Team */}
         <section className="space-y-8">
-          <div className="space-y-4 border-b border-neutral-300 pb-6">
-            <p className="text-sm uppercase tracking-wide text-neutral-500">Student Engineering Team</p>
+          <div className="space-y-4">
             <h2 className="text-4xl">USC AeroDesign Team (ADT)</h2>
             <p className="text-neutral-600 leading-relaxed text-lg max-w-4xl">
               The USC AeroDesign Team (ADT) is a student-led organization that designs, builds, and flies radio-controlled aircraft for the annual AIAA Design/Build/Fly (DBF) competition. My work has progressed from structures and manufacturing into aircraft-level design and configuration.
@@ -63,8 +62,7 @@ export function Teams() {
 
         {/* Terra Labs */}
         <section className="space-y-8">
-          <div className="space-y-4 border-b border-neutral-300 pb-6">
-            <p className="text-sm uppercase tracking-wide text-neutral-500">Student Engineering Team</p>
+          <div className="space-y-4">
             <h2 className="text-4xl">Terra Labs</h2>
             <p className="text-neutral-600 leading-relaxed text-lg max-w-4xl">
               Terra Labs is a student engineering organization focused on building ambitious hardware projects. My work has included electrical systems development for Cove and mechanical design and manufacturing for Terraport.
