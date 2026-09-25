@@ -125,7 +125,7 @@ export function Home() {
           <div className="space-y-3">
             <h2 className="text-4xl">Currently Working On</h2>
             <p className="text-lg text-neutral-600 max-w-3xl">
-              These projects are still in progress and evolving as I work through new design decisions, testing, and integration. If any of them catch your interest, ask me about them.
+              These projects are still in progress and evolving as I work through new design decisions and testing. If any of them catch your interest, ask me about them!
             </p>
           </div>
 
