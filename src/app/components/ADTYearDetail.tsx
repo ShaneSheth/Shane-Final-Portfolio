@@ -99,16 +99,6 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
                     />
                   </div>
                 </div>
-
-                <div>
-                  <a
-                    href="https://imgur.com/a/5uJhYoT"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="outline">View Full Imgur Album</Button>
-                  </a>
-                </div>
               </div>
             </section>
 
