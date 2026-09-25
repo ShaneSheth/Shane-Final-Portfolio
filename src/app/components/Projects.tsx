@@ -37,7 +37,7 @@ const projects: Project[] = [
   },
   {
     id: "arc-reactor",
-    title: "Arc Reactor Pro",
+    title: "Tony Stark Arc Reactor Prop",
     year: "2025",
     description: "Built an arc reactor for a Tony Stark costume. CAD modeling, 3D printing, and assembly were all performed in-house. The lighting system consists of 12 LEDs wired in 4 parallel series of 3 with resistors and powered by a 9-volt battery. Learned soldering and basic electronics through the project.",
     image: "https://i.imgur.com/lsZtc5V.jpeg",
