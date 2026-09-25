@@ -59,9 +59,9 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
 
                 <div className="space-y-3">
                   <h3 className="text-xl font-semibold">Mass Properties & Layout</h3>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Working through internal component placement, center-of-gravity targets, static margin requirements, and packaging constraints as the configuration matures.
-                  </p>
+                  <ul className="space-y-2 text-neutral-600 leading-relaxed">
+                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Working through internal component placement, center-of-gravity targets, static margin requirements, and packaging constraints as the configuration matures.</span></li>
+                  </ul>
                 </div>
               </div>
             </section>
