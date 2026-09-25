@@ -67,7 +67,7 @@ export function Teams() {
             </div>
             <div className="rounded-2xl border border-neutral-200 p-8 space-y-4 bg-white">
               <p className="text-sm uppercase tracking-wide text-neutral-500">Terraport</p>
-              <h3 className="text-2xl">Mechanical Design</h3>
+              <h3 className="text-2xl">Manufacturing</h3>
               <p className="text-neutral-600 leading-relaxed">
                 Contributed to the design and manufacturing of a mobile workstation that unfolds into storage, work surfaces, tools, and seating, using collaborative CAD and hands-on fabrication.
               </p>
