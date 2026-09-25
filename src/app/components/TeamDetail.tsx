@@ -250,6 +250,24 @@ export function TeamDetail() {
                 CAD-ed with Onshape in a collaborative file with 5 other members to create this workstation. Designed upper level retractable work table and storage space. Sourced correct bolts for drivetrain assemblies. Learned welding, plasma cutting, and angle griding to manufacture the workstation.
               </p>
             </div>
+
+            {/* Skills Section */}
+            <div className="space-y-6">
+              <h2 className="text-3xl">Skills</h2>
+              <div className="flex flex-wrap gap-3">
+                <span className="rounded-full border border-neutral-300 bg-white px-4 py-2 text-neutral-700">Welding</span>
+                <span className="rounded-full border border-neutral-300 bg-white px-4 py-2 text-neutral-700">Plasma Cutter</span>
+                <span className="rounded-full border border-neutral-300 bg-white px-4 py-2 text-neutral-700">CNC Water Jet</span>
+              </div>
+            </div>
+
+            {/* CAD Images Section */}
+            <div className="space-y-6">
+              <h2 className="text-3xl">CAD Images</h2>
+              <div className="rounded-2xl border border-dashed border-neutral-300 p-10 text-center text-neutral-500">
+                CAD images will be added here.
+              </div>
+            </div>
           </>
         )}
       </div>
