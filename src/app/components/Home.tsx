@@ -129,20 +129,12 @@ export function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Link to="/teams/usc-aerodesign-2026-2027" className="rounded-2xl border border-neutral-200 bg-white p-7 space-y-3 hover:shadow-md transition-shadow">
-              <p className="text-sm uppercase tracking-wide text-neutral-500">USC AeroDesign Team</p>
-              <h3 className="text-2xl">Aircraft Configuration</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Link to="/projects" className="rounded-2xl border border-neutral-200 bg-white p-7 space-y-3 hover:shadow-md transition-shadow">
+              <p className="text-sm uppercase tracking-wide text-neutral-500">MATLAB Optimization</p>
+              <h3 className="text-2xl">Aircraft Balancing Trade Program</h3>
               <p className="text-neutral-600 leading-relaxed">
-                Leading aircraft-level configuration decisions and full-aircraft CAD integration for the 2026–2027 design cycle.
-              </p>
-            </Link>
-
-            <Link to="/teams/cove-terra-labs" className="rounded-2xl border border-neutral-200 bg-white p-7 space-y-3 hover:shadow-md transition-shadow">
-              <p className="text-sm uppercase tracking-wide text-neutral-500">Terra Labs</p>
-              <h3 className="text-2xl">Cove Electrical Systems</h3>
-              <p className="text-neutral-600 leading-relaxed">
-                Developing power distribution, CAN communication, wiring, safety systems, and hardware integration for a 7-DOF robotic arm.
+                Developing a MATLAB tool to trade aircraft component layouts and identify configurations that meet target center-of-gravity and static-margin requirements while allowing nose length to vary and minimizing required ballast.
               </p>
             </Link>
 
