@@ -158,7 +158,7 @@ export function Home() {
           </div>
 
           <div className="flex flex-wrap gap-3">
-            {["Formula 1 (Vamos Checo!)", "Surfing, Skateboarding & Snowboarding", "Trivia", "Greek & Other Mythology", "Table Tennis", "Learning New Things"].map((interest) => (
+            {["Formula 1 (Vamos Checo!)", "Surfing, Skateboarding & Snowboarding", "Trivia", "Greek & Other Mythology", "Table Tennis", "Traveling", "Learning New Things"].map((interest) => (
               <span
                 key={interest}
                 className="rounded-full border border-neutral-300 bg-white px-5 py-3 text-neutral-700"
