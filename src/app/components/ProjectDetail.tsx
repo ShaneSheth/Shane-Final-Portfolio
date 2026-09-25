@@ -328,10 +328,12 @@ export function ProjectDetail() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[
-                  ["https://i.imgur.com/R15MZB5.jpg", "Experience Synesthesia project photo 1"],
-                  ["https://i.imgur.com/Tnr0fQV.jpg", "Experience Synesthesia project photo 2"],
-                  ["https://i.imgur.com/7EGVKoY.jpg", "Experience Synesthesia project photo 3"],
-                  ["https://i.imgur.com/AUYI3lk.jpg", "Experience Synesthesia project photo 4"],
+                  ["https://i.imgur.com/z75KNHc.png", "Experience Synesthesia project photo"],
+                  ["https://i.imgur.com/X4Z9FhY.png", "Experience Synesthesia project photo"],
+                  ["https://i.imgur.com/R15MZB5.jpg", "Experience Synesthesia project photo"],
+                  ["https://i.imgur.com/Tnr0fQV.jpg", "Experience Synesthesia project photo"],
+                  ["https://i.imgur.com/7EGVKoY.jpg", "Experience Synesthesia project photo"],
+                  ["https://i.imgur.com/AUYI3lk.jpg", "Experience Synesthesia project photo"],
                 ].map(([src, alt]) => (
                   <ImageWithFallback key={src} src={src} alt={alt} className="w-full h-auto rounded-lg shadow-md" />
                 ))}
