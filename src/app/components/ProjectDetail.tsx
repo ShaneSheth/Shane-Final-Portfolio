@@ -18,7 +18,7 @@ interface ProjectDetailData {
   technicalSections: TechnicalSection[];
   results: string[];
   learnings: string[];
-  mediaType: "synesthesia" | "band" | "bridge" | "turtle" | "firefighting" | "placeholder";
+  mediaType: "synesthesia" | "band" | "bridge" | "turtle" | "firefighting" | "surfboard" | "placeholder";
 }
 
 const projectDetails: Record<string, ProjectDetailData> = {
@@ -144,7 +144,7 @@ const projectDetails: Record<string, ProjectDetailData> = {
       "Hand-shaped parts benefit from frequent symmetry checks because errors become harder to remove later in the process.",
       "Composite quality depends heavily on preparation, relief cuts, surface conformity, and controlling trapped air during layup."
     ],
-    mediaType: "placeholder",
+    mediaType: "surfboard",
   },
   "bridge-design": {
     id: "bridge-design",
@@ -420,6 +420,29 @@ export function ProjectDetail() {
                   </Button>
                 </a>
               </div>
+            </div>
+          )}
+
+          {project.mediaType === "surfboard" && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                ["https://i.imgur.com/G8pdm1r.jpg", "Surfboard design and build photo 1"],
+                ["https://i.imgur.com/gZ2gr0h.jpg", "Surfboard design and build photo 2"],
+                ["https://i.imgur.com/D52Ky0J.jpg", "Surfboard design and build photo 3"],
+                ["https://i.imgur.com/ByukcGi.jpg", "Surfboard design and build photo 4"],
+                ["https://i.imgur.com/kGhd5Yr.jpg", "Surfboard design and build photo 5"],
+              ].map(([src, alt], index) => (
+                <div
+                  key={src}
+                  className={`rounded-xl overflow-hidden bg-neutral-200 ${index === 4 ? "md:col-span-2" : ""}`}
+                >
+                  <ImageWithFallback
+                    src={src}
+                    alt={alt}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              ))}
             </div>
           )}
 
