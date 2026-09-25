@@ -12,10 +12,13 @@ export function Home() {
     <div className="min-h-screen px-8 py-20">
       <div className="max-w-7xl mx-auto space-y-28">
         {/* Hero */}
-        <section className="min-h-[78vh] flex items-center">
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <p className="text-lg text-neutral-500">Welcome to Shane's Portfolio!</p>
+        <section className="min-h-[82vh] relative pt-6">
+          <p className="absolute top-0 left-0 text-5xl md:text-6xl text-neutral-900">
+            Welcome to Shane's Portfolio!
+          </p>
+
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start pt-28">
+            <div className="space-y-7 pt-2">
               <div className="space-y-4">
                 <h1 className="text-7xl tracking-tight">Shane Sheth</h1>
                 <p className="text-2xl text-neutral-600">
@@ -38,6 +41,26 @@ export function Home() {
                     View Projects
                   </Button>
                 </Link>
+              </div>
+
+              <div className="pt-3 space-y-3">
+                <p className="text-sm uppercase tracking-wide text-neutral-500">Resume</p>
+                <div className="max-w-md w-full aspect-[8.5/11] rounded-xl overflow-hidden border border-neutral-200 bg-white shadow-md">
+                  <iframe
+                    src="/Shane-Sheth-Resume.pdf#view=FitH"
+                    title="Shane Sheth Resume"
+                    className="w-full h-full"
+                    style={{ border: "none" }}
+                  />
+                </div>
+                <Button
+                  onClick={handleDownloadResume}
+                  variant="outline"
+                  className="w-fit"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  Open Resume
+                </Button>
               </div>
             </div>
 
@@ -102,7 +125,7 @@ export function Home() {
           <div className="space-y-3">
             <h2 className="text-4xl">Currently Working On</h2>
             <p className="text-lg text-neutral-600 max-w-3xl">
-              Projects and systems I am actively developing right now.
+              These projects are still in progress and evolving as I work through new design decisions, testing, and integration. If any of them catch your interest, ask me about them.
             </p>
           </div>
 
@@ -143,7 +166,7 @@ export function Home() {
           </div>
 
           <div className="flex flex-wrap gap-3">
-            {["Formula 1", "Running", "Surfing & Board Building", "Trivia", "Debate", "Learning New Things"].map((interest) => (
+            {["Formula 1 (Vamos Checo!)", "Surfing, Skateboarding & Snowboarding", "Trivia", "Greek & Other Mythology", "Table Tennis", "Learning New Things"].map((interest) => (
               <span
                 key={interest}
                 className="rounded-full border border-neutral-300 bg-white px-5 py-3 text-neutral-700"
@@ -154,34 +177,6 @@ export function Home() {
           </div>
         </section>
 
-        {/* Resume */}
-        <section className="space-y-8 pb-16">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-            <div className="space-y-3">
-              <h2 className="text-4xl">Resume</h2>
-              <p className="text-lg text-neutral-600">
-                A quick look at my experience, technical work, and current roles.
-              </p>
-            </div>
-            <Button
-              onClick={handleDownloadResume}
-              size="lg"
-              className="bg-neutral-900 hover:bg-neutral-800 text-white w-fit"
-            >
-              <Download className="w-5 h-5 mr-2" />
-              Open Resume
-            </Button>
-          </div>
-
-          <div className="max-w-4xl mx-auto w-full aspect-[8.5/11] rounded-2xl overflow-hidden border border-neutral-200 bg-white shadow-lg">
-            <iframe
-              src="/Shane-Sheth-Resume.pdf#view=FitH"
-              title="Shane Sheth Resume"
-              className="w-full h-full"
-              style={{ border: "none" }}
-            />
-          </div>
-        </section>
       </div>
     </div>
   );
