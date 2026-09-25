@@ -39,6 +39,14 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
 
         {isCurrent ? (
           <>
+            <section className="space-y-3">
+              <p className="text-sm uppercase tracking-wide text-neutral-500">Summer Plane</p>
+              <h2 className="text-4xl">SunSCreen</h2>
+              <p className="text-lg text-neutral-600 leading-relaxed">
+                The work below documents my configuration, integration, and mass-properties work on the 2026 summer aircraft. Future V1 and later aircraft work will be added as the 2026–2027 design cycle progresses.
+              </p>
+            </section>
+
             <section className="space-y-8">
               <h2 className="text-3xl">Current Work</h2>
               <div className="space-y-6">
@@ -99,6 +107,49 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
                     />
                   </div>
                 </div>
+              </div>
+            </section>
+
+            <section className="space-y-6">
+              <div className="space-y-2">
+                <h2 className="text-3xl">Configuration Downselects</h2>
+                <p className="text-neutral-600 leading-relaxed">
+                  Representative trade studies used to compare major aircraft configuration decisions during the summer design process.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {[
+                  ["https://i.imgur.com/pS7SzYx.png", "SunSCreen configuration downselect 1"],
+                  ["https://i.imgur.com/YrYSEcv.png", "SunSCreen configuration downselect 2"],
+                  ["https://i.imgur.com/q2p5kA5.png", "SunSCreen configuration downselect 3"],
+                  ["https://i.imgur.com/gndaWNg.png", "SunSCreen configuration downselect 4"],
+                  ["https://i.imgur.com/jK1EaGP.png", "SunSCreen configuration downselect 5"],
+                ].map(([src, alt], index) => (
+                  <div
+                    key={src}
+                    className={`rounded-xl overflow-hidden border border-neutral-200 bg-white ${index === 4 ? "md:col-span-2" : ""}`}
+                  >
+                    <img src={src} alt={alt} className="w-full h-auto" />
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="space-y-6">
+              <div className="space-y-2">
+                <h2 className="text-3xl">Mass Properties & Balancing</h2>
+                <p className="text-neutral-600 leading-relaxed">
+                  Balancing spreadsheet used to track component masses and locations, center of gravity, and static margin as the aircraft configuration developed.
+                </p>
+              </div>
+
+              <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                <img
+                  src="https://i.imgur.com/2TiR2jq.png"
+                  alt="SunSCreen aircraft balancing spreadsheet"
+                  className="w-full h-auto"
+                />
               </div>
             </section>
 
