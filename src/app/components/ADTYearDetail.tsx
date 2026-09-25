@@ -67,9 +67,48 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
             </section>
 
             <section className="space-y-6">
-              <h2 className="text-3xl">CAD Models</h2>
-              <div className="rounded-2xl border border-dashed border-neutral-300 p-10 text-center text-neutral-500">
-                Current-year CAD models and design documentation will be added here as the aircraft develops.
+              <div className="space-y-2">
+                <h2 className="text-3xl">SunSCreen CAD</h2>
+                <p className="text-neutral-600 leading-relaxed">
+                  2026–2027 summer aircraft CAD showing the current full-aircraft configuration and major external geometry.
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                  <img
+                    src="https://i.imgur.com/b9DJywJ.png"
+                    alt="SunSCreen aircraft CAD isometric view"
+                    className="w-full h-auto"
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                    <img
+                      src="https://i.imgur.com/yBcBEt1.png"
+                      alt="SunSCreen aircraft CAD top view"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                    <img
+                      src="https://i.imgur.com/803jKZf.png"
+                      alt="SunSCreen aircraft CAD front view"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <a
+                    href="https://imgur.com/a/5uJhYoT"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline">View Full Imgur Album</Button>
+                  </a>
+                </div>
               </div>
             </section>
 
