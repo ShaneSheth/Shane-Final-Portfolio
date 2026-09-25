@@ -204,7 +204,26 @@ export function TeamDetail() {
 
             {/* Project Photos Section */}
             <div className="space-y-8">
-              <h2 className="text-3xl">Project Photos</h2>
+              <h2 className="text-3xl">Project Photos & Videos</h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="w-full aspect-[4/3] rounded-xl overflow-hidden border border-neutral-200 bg-black">
+                  <iframe
+                    src="https://imgur.com/92RngGw/embed"
+                    title="Cove project media"
+                    className="w-full h-full"
+                    allow="fullscreen"
+                  />
+                </div>
+                <div className="w-full aspect-[4/3] rounded-xl overflow-hidden border border-neutral-200 bg-black">
+                  <iframe
+                    src="https://imgur.com/DenVLk4/embed"
+                    title="Cove project media"
+                    className="w-full h-full"
+                    allow="fullscreen"
+                  />
+                </div>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-8">
                   <img 
