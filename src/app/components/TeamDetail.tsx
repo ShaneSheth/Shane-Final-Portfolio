@@ -281,11 +281,24 @@ export function TeamDetail() {
               </div>
             </div>
 
-            {/* CAD Images Section */}
+            {/* Project Photos Section */}
             <div className="space-y-6">
-              <h2 className="text-3xl">CAD Images</h2>
-              <div className="rounded-2xl border border-dashed border-neutral-300 p-10 text-center text-neutral-500">
-                CAD images will be added here.
+              <h2 className="text-3xl">Project Photos</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="rounded-xl overflow-hidden bg-neutral-200">
+                  <img
+                    src="https://i.imgur.com/OjzBgjf.jpg"
+                    alt="Terraport project photo 1"
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden bg-neutral-200">
+                  <img
+                    src="https://i.imgur.com/Ef1hwC4.jpg"
+                    alt="Terraport project photo 2"
+                    className="w-full h-auto"
+                  />
+                </div>
               </div>
             </div>
           </>
