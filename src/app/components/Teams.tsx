@@ -18,7 +18,7 @@ export function Teams() {
               </p>
             </div>
             <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-neutral-200">
-              <ImageWithFallback src="https://i.imgur.com/3vK8WB5.jpg" alt="USC AeroDesign Team" className="w-full h-full object-cover" />
+              <ImageWithFallback src="https://i.imgur.com/eNXnbPn.jpg" alt="USC AeroDesign Team" className="w-full h-full object-cover" />
             </div>
           </div>
 
