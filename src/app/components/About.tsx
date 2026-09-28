@@ -23,19 +23,19 @@ export function About() {
           <div className="space-y-6">
             <div className="prose prose-lg max-w-none">
               <p className="text-neutral-700 leading-relaxed text-lg">
-                Hi! I'm Shane Sheth, a Mechanical Engineering student at the University of Southern California's Viterbi School of Engineering. Through my academic work, I've developed experience in CAD-based design, robotics, and advanced manufacturing. I enjoy challenges that require both technical reasoning and creative problem solving and I'm always eager to learn new skills and technologies.
+                Hi! I'm Shane Sheth, an undergraduate Mechanical Engineering student at the University of Southern California's Viterbi School of Engineering (FIGHT ON!!).
               </p>
 
               <p className="text-neutral-700 leading-relaxed text-lg mt-8">
-                I'm drawn to aerospace, robotics, and other mechanical focused fields that involve complex systems and real tradeoffs. I'm interested in mechanisms, structures, electronics, sensing and actuation, and how individual subsystems interact at a higher system level.
+                I like working on projects where I can take something from an early idea all the way through design, CAD, manufacturing, testing, and iteration. A lot of my experience has been in aircraft, robotics, and hands-on hardware, but I generally just enjoy figuring out how things work and trying to make them better.
               </p>
 
               <p className="text-neutral-700 leading-relaxed text-lg mt-8">
-                Outside of engineering, I'm interested in Formula One (Forza Ferrari Sempre) and in studying history, especially ancient Greece, Rome, and the Napoleonic era. I also enjoy playing table tennis and always keep a paddle on hand in case I find a table to play on. I believe that a well-rounded perspective is essential for tackling complex engineering challenges.
+                Outside of classes, I spend a lot of my time working with USC AeroDesign and Terra Labs or building personal projects. I especially enjoy work that forces me to balance different constraints rather than optimize one thing in isolation.
               </p>
 
               <p className="text-neutral-700 leading-relaxed text-lg mt-8">
-                I'm actively seeking opportunities to contribute to challenging projects in mechanical engineering, aerospace engineering, or robotics. Whether through clubs, research labs, or working in industry, I'm eager to apply what I've learned while continuing to grow as an engineer.
+                When I'm not doing engineering stuff, I'm probably watching Formula 1 or hockey, surfing, snowboarding, playing table tennis, doing trivia, or going down some random rabbit hole about mythology.
               </p>
             </div>
           </div>
