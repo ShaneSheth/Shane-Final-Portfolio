@@ -284,13 +284,22 @@ export function TeamDetail() {
             {/* Project Photos Section */}
             <div className="space-y-6">
               <h2 className="text-3xl">Project Photos</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="rounded-xl overflow-hidden bg-neutral-200">
-                  <img
-                    src="https://i.imgur.com/OjzBgjf.jpg"
-                    alt="Terraport project photo 1"
-                    className="w-full h-auto"
-                  />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                <div className="space-y-6">
+                  <div className="rounded-xl overflow-hidden bg-neutral-200">
+                    <img
+                      src="https://i.imgur.com/OjzBgjf.jpg"
+                      alt="Terraport project photo 1"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="rounded-xl overflow-hidden bg-neutral-200">
+                    <img
+                      src="https://i.imgur.com/LWyLFhF.jpg"
+                      alt="Terraport exterior CAD"
+                      className="w-full h-auto"
+                    />
+                  </div>
                 </div>
                 <div className="rounded-xl overflow-hidden bg-neutral-200">
                   <img
