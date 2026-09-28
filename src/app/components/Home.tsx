@@ -88,7 +88,7 @@ export function Home() {
             <Link to="/teams" className="group">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-200">
                 <ImageWithFallback
-                  src="https://i.imgur.com/3vK8WB5.jpg"
+                  src="https://i.imgur.com/eNXnbPn.jpg"
                   alt="USC AeroDesign Team aircraft"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
