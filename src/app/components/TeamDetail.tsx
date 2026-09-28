@@ -300,6 +300,13 @@ export function TeamDetail() {
                       className="w-full h-auto"
                     />
                   </div>
+                  <div className="rounded-xl overflow-hidden bg-neutral-200">
+                    <img
+                      src="https://i.imgur.com/g09CpSw.jpg"
+                      alt="Terraport project photo 3"
+                      className="w-full h-auto"
+                    />
+                  </div>
                 </div>
                 <div className="rounded-xl overflow-hidden bg-neutral-200">
                   <img
