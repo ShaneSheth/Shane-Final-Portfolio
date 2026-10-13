@@ -39,6 +39,28 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
 
         {isCurrent ? (
           <>
+            <section className="space-y-3 pt-8 border-t border-neutral-200">
+              <p className="text-sm uppercase tracking-wide text-neutral-500">Competition Plane</p>
+              <h2 className="text-4xl">V1 Competition Plane</h2>
+              <p className="text-lg text-neutral-600 leading-relaxed">
+                Configuration development for the 2026–2027 competition aircraft.
+              </p>
+            </section>
+
+            <section className="space-y-8">
+              <div className="space-y-3">
+                <h2 className="text-3xl">Configuration Downselects</h2>
+              </div>
+
+              <div className="space-y-3">
+                <h2 className="text-3xl">Outer Mold Line (OML)</h2>
+              </div>
+
+              <div className="space-y-3">
+                <h2 className="text-3xl">Mass Properties & Balancing</h2>
+              </div>
+            </section>
+
             <section className="space-y-3">
               <p className="text-sm uppercase tracking-wide text-neutral-500">Summer Plane</p>
               <h2 className="text-4xl">SunSCreen</h2>
@@ -155,28 +177,6 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
                   alt="SunSCreen aircraft balancing spreadsheet"
                   className="w-full h-auto"
                 />
-              </div>
-            </section>
-
-            <section className="space-y-3 pt-8 border-t border-neutral-200">
-              <p className="text-sm uppercase tracking-wide text-neutral-500">Competition Plane</p>
-              <h2 className="text-4xl">V1 Competition Plane</h2>
-              <p className="text-lg text-neutral-600 leading-relaxed">
-                Configuration development for the 2026–2027 competition aircraft.
-              </p>
-            </section>
-
-            <section className="space-y-8">
-              <div className="space-y-3">
-                <h2 className="text-3xl">Configuration Downselects</h2>
-              </div>
-
-              <div className="space-y-3">
-                <h2 className="text-3xl">Outer Mold Line (OML)</h2>
-              </div>
-
-              <div className="space-y-3">
-                <h2 className="text-3xl">Mass Properties & Balancing</h2>
               </div>
             </section>
 
