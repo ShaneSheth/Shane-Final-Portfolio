@@ -399,6 +399,36 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
                   <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Replaced CF D-box skin with 1/32in balsa to reduce weight.</span></li>
                   <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Overall, I reduced the total empennage weight by 9.5% by removing integration hardware, added skin weight, and by making structurally-driven lightening cutouts.</span></li>
                 </ul>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-semibold">V2 Tail — Before Redesign</h3>
+                    <div className="space-y-6">
+                      <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                        <img src="https://i.imgur.com/iv30Hns.jpg" alt="V2 empennage before redesign view 1" className="w-full h-auto" />
+                      </div>
+                      <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                        <img src="https://i.imgur.com/OfVRHmr.jpg" alt="V2 empennage before redesign view 2" className="w-full h-auto" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-semibold">V3 Tail — Redesigned</h3>
+                    <div className="space-y-6">
+                      {[
+                        ["https://i.imgur.com/mHRUfUY.jpg", "V3 redesigned empennage view 1"],
+                        ["https://i.imgur.com/3hWQfsP.jpg", "V3 redesigned empennage view 2"],
+                        ["https://i.imgur.com/BrX0cfr.jpg", "V3 redesigned empennage view 3"],
+                        ["https://i.imgur.com/hURjRR1.jpg", "V3 redesigned empennage view 4"],
+                      ].map(([src, alt]) => (
+                        <div key={src} className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                          <img src={src} alt={alt} className="w-full h-auto" />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="space-y-4">
