@@ -105,17 +105,21 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {[
-                        ["https://i.imgur.com/lnNq6Ay.jpg", "V1 design consideration view 1"],
-                        ["https://i.imgur.com/dviRjCt.jpg", "V1 design consideration view 2"],
-                        ["https://i.imgur.com/cK73wSE.jpg", "V1 design consideration view 3"],
-                        ["https://i.imgur.com/a7LbJga.jpg", "V1 design consideration view 4"],
-                        ["https://i.imgur.com/wQuBNp6.jpg", "V1 design consideration view 5"],
-                      ].map(([src, alt]) => (
+                        { src: "https://i.imgur.com/lnNq6Ay.jpg", alt: "V1 design consideration view 1" },
+                        { src: "https://i.imgur.com/dviRjCt.jpg", alt: "V1 design consideration view 2" },
+                        { src: "https://i.imgur.com/cK73wSE.jpg", alt: "V1 rho values by fuselage station table", fullWidth: true, cropTable: true },
+                        { src: "https://i.imgur.com/a7LbJga.jpg", alt: "V1 design consideration view 4" },
+                        { src: "https://i.imgur.com/wQuBNp6.jpg", alt: "V1 design consideration view 5" },
+                      ].map(({ src, alt, fullWidth, cropTable }) => (
                         <div
                           key={src}
-                          className="rounded-xl overflow-hidden border border-neutral-200 bg-white"
+                          className={`rounded-xl overflow-hidden border border-neutral-200 bg-white ${fullWidth ? "md:col-span-2" : ""} ${cropTable ? "aspect-[3/1]" : ""}`}
                         >
-                          <img src={src} alt={alt} className="w-full h-auto" />
+                          <img
+                            src={src}
+                            alt={alt}
+                            className={cropTable ? "w-full h-full object-cover object-top" : "w-full h-auto"}
+                          />
                         </div>
                       ))}
                     </div>
