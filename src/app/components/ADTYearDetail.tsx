@@ -139,8 +139,15 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
                     </div>
                   </div>
 
-                  <div className="space-y-3">
+                  <div className="space-y-6">
                     <h2 className="text-3xl">Mass Properties & Balancing</h2>
+                    <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                      <img
+                        src="https://i.imgur.com/CVCtSe3.jpg"
+                        alt="V1 mass properties and balancing"
+                        className="w-full h-auto"
+                      />
+                    </div>
                   </div>
                 </section>
               </>
