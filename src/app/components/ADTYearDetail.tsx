@@ -386,6 +386,24 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
             </section>
 
             <section className="space-y-6">
+              <div className="space-y-3">
+                <h2 className="text-3xl">V3 Empennage Redesign</h2>
+                <p className="text-neutral-600 leading-relaxed">
+                  Detailed design rationale, tradeoffs, and iteration notes will be added here.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold">Drawing Package</h3>
+                <div className="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-10 text-center">
+                  <p className="text-neutral-600">
+                    V3 empennage drawing package PDF will be embedded here.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section className="space-y-6">
               <h2 className="text-3xl">2025-2026 AIAA DBF Competition Report</h2>
               <div className="space-y-6">
                 <div className="w-full aspect-[8.5/11] rounded-xl overflow-hidden shadow-lg">
