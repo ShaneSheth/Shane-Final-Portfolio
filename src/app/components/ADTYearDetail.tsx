@@ -41,6 +41,33 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
 
         {isCurrent ? (
           <>
+            <section className="space-y-8">
+              <h2 className="text-3xl">Current Work</h2>
+              <div className="space-y-6">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold">Aircraft Configuration & Airframe Design</h3>
+                  <ul className="space-y-2 text-neutral-600 leading-relaxed">
+                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Lead high-level aircraft configuration downselects for a 30+ member design team, determining aircraft architecture, wing and payload positioning, and propulsion, tail, and fuselage configuration.</span></li>
+                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Designed the aircraft outer mold line by balancing aerodynamic, structural, performance, landing-gear, and payload requirements, and determining tradeoffs to blend competing subsystem constraints into a single manufacturable airframe.</span></li>
+                  </ul>
+                </div>
+
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold">Full-Aircraft CAD & Integration</h3>
+                  <ul className="space-y-2 text-neutral-600 leading-relaxed">
+                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Own full-aircraft CAD integration across 7 aircraft subsystems in SolidWorks, including designing and lofting the fuselage OML and translating finalized geometry into build drawings, laser-cut documents, and molds for manufacturing.</span></li>
+                  </ul>
+                </div>
+
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold">Mass Properties & Layout</h3>
+                  <ul className="space-y-2 text-neutral-600 leading-relaxed">
+                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Working through internal component placement, center-of-gravity targets, static margin requirements, and packaging constraints as the configuration matures.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
             <div className="space-y-3">
               <p className="text-sm uppercase tracking-wide text-neutral-500">Aircraft</p>
               <div className="flex flex-wrap gap-3">
@@ -67,6 +94,47 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
                   <p className="text-lg text-neutral-600 leading-relaxed">
                     Configuration development for the 2026–2027 competition aircraft.
                   </p>
+                </section>
+
+                <section className="space-y-6">
+                  <div className="space-y-3">
+                    <h2 className="text-3xl">Mission Requirements & Design Challenge</h2>
+                    <p className="text-neutral-600 leading-relaxed">
+                      The 2026–2027 competition centers around carrying, deploying, and protecting a common sensor payload across multiple missions. The aircraft must be configured to perform well with the sensor packaged inside a shipping container, with the sensor deployed and towed beneath the aircraft, and across a ground-impact mission that rewards both payload mass and survivability.
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 gap-4">
+                    <div className="rounded-xl border border-neutral-200 bg-white p-6 space-y-3">
+                      <h3 className="text-xl font-semibold">Mission 2 — Sensor Transport</h3>
+                      <p className="text-neutral-600 leading-relaxed">
+                        Carry the sensor inside a rectangular-prism shipping container for five laps in under five minutes. Scoring rewards the combined sensor and shipping-container weight relative to completion time.
+                      </p>
+                      <p className="font-medium text-neutral-800">
+                        M2 = 1 + [N_(weight/time) / Max_(weight/time)]
+                      </p>
+                    </div>
+
+                    <div className="rounded-xl border border-neutral-200 bg-white p-6 space-y-3">
+                      <h3 className="text-xl font-semibold">Mission 3 — Deploy, Tow & Re-stow</h3>
+                      <p className="text-neutral-600 leading-relaxed">
+                        Carry the sensor without the shipping container, deploy it in flight, tow it beneath the aircraft, and re-stow it inside the aircraft before landing. Scoring rewards both the number of laps completed in five minutes and the sensor weight.
+                      </p>
+                      <p className="font-medium text-neutral-800">
+                        M3 = 2 + [N_(# laps × sensor weight) / Max_(# laps × sensor weight)]
+                      </p>
+                    </div>
+
+                    <div className="rounded-xl border border-neutral-200 bg-white p-6 space-y-3">
+                      <h3 className="text-xl font-semibold">Ground Mission — Shipping Container Drop</h3>
+                      <p className="text-neutral-600 leading-relaxed">
+                        Drop the shipping container with the sensor inside from a selected height. The container and sensor must survive the impact with no visible damage. Scoring rewards both the combined weight and the drop height.
+                      </p>
+                      <p className="font-medium text-neutral-800">
+                        GM = 0.5 + [N_(weight × height) / Max_(weight × height)]
+                      </p>
+                    </div>
+                  </div>
                 </section>
 
                 <section className="space-y-8">
@@ -161,29 +229,27 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
                   </p>
                 </section>
 
-                <section className="space-y-8">
-                  <h2 className="text-3xl">Current Work</h2>
-                  <div className="space-y-6">
-                    <div className="space-y-3">
-                      <h3 className="text-xl font-semibold">Aircraft Configuration & Airframe Design</h3>
-                      <ul className="space-y-2 text-neutral-600 leading-relaxed">
-                        <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Lead high-level aircraft configuration downselects for a 30+ member design team, determining aircraft architecture, wing and payload positioning, and propulsion, tail, and fuselage configuration.</span></li>
-                        <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Designed the aircraft outer mold line by balancing aerodynamic, structural, performance, landing-gear, and payload requirements, and determining tradeoffs to blend competing subsystem constraints into a single manufacturable airframe.</span></li>
-                      </ul>
+                <section className="space-y-6">
+                  <div className="space-y-3">
+                    <h2 className="text-3xl">Mission Requirements & Design Challenge</h2>
+                    <p className="text-neutral-600 leading-relaxed">
+                      The summer aircraft was designed around two payload missions that drove packaging, payload integration, and aircraft-layout decisions.
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 gap-4">
+                    <div className="rounded-xl border border-neutral-200 bg-white p-6 space-y-3">
+                      <h3 className="text-xl font-semibold">Mission 2 — Rocket Stage</h3>
+                      <p className="text-neutral-600 leading-relaxed">
+                        Carry a “rocket stage” made from a commercially available water bottle filled with sand. Mission scoring is based on both the number of laps completed and the carried payload weight.
+                      </p>
                     </div>
 
-                    <div className="space-y-3">
-                      <h3 className="text-xl font-semibold">Full-Aircraft CAD & Integration</h3>
-                      <ul className="space-y-2 text-neutral-600 leading-relaxed">
-                        <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Owned full-aircraft CAD integration through the complete design cycle, assembling 7 aircraft subsystems in SolidWorks and translating finalized geometry into build drawings, laser-cut documents, and molds for manufacturing.</span></li>
-                      </ul>
-                    </div>
-
-                    <div className="space-y-3">
-                      <h3 className="text-xl font-semibold">Mass Properties & Layout</h3>
-                      <ul className="space-y-2 text-neutral-600 leading-relaxed">
-                        <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Working through internal component placement, center-of-gravity targets, static margin requirements, and packaging constraints as the configuration matures.</span></li>
-                      </ul>
+                    <div className="rounded-xl border border-neutral-200 bg-white p-6 space-y-3">
+                      <h3 className="text-xl font-semibold">Mission 3 — Mine Deployment</h3>
+                      <p className="text-neutral-600 leading-relaxed">
+                        Deploy “mines,” each consisting of an egg filled with confetti. Only one mine may be dropped per lap, and each egg must survive ground impact without breaking. Mission scoring is based on the number of mines successfully deployed.
+                      </p>
                     </div>
                   </div>
                 </section>
