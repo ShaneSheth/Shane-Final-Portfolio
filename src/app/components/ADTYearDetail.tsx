@@ -389,14 +389,16 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
               <div className="space-y-4">
                 <h2 className="text-3xl">V3 Empennage Redesign</h2>
                 <p className="text-neutral-600 leading-relaxed">
-                  The V3 empennage redesign focused on simplifying aircraft integration, improving the structural load path into the tail boom, and reducing weight on an aircraft that was highly sensitive to empty mass. The previous empennage used three separately integrated components, so I redesigned the tail around a single integrated structure mounted to the tail boom at two locations.
+                  The 2025-2026 V2 Competition aircraft faced frequent structural problems with the empennage during flight tests, leading to a very overbuilt, heavy, and overall inefficient tail. The aircraft was very sensitive to empty weight as well, making the tail even more detrimental to aircraft performance. I took on the responsibility of redesigning the V3 empennage to improve the structural load path from the vertical stabilizer, through the horizontal stabilizer, into the fuselage boom; simplify tail integration; and reduce weight.
                 </p>
-                <p className="text-neutral-600 leading-relaxed">
-                  The new layout used extended vertical-stabilizer spars tied into the horizontal-stabilizer root rib, with fiberglass-plywood sandwich hardpoints at the primary attachment locations. I also incorporated a 4° horizontal-stabilizer angle of incidence and a tail fairing to improve the aerodynamic integration of the tail assembly.
-                </p>
-                <p className="text-neutral-600 leading-relaxed">
-                  Weight reduction was a major design driver throughout the iteration. I reduced empennage mass by 9.5% by removing unnecessary material through structurally driven cutouts, minimizing integration hardware, and replacing the carbon-fiber D-box skin with 1/32&quot; balsa where the added composite stiffness was not required. The drawing package below documents the final internal rib-and-spar layout, reinforcements, rudder integration, and assembly geometry.
-                </p>
+                <ul className="space-y-2 text-neutral-600 leading-relaxed">
+                  <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Re-designed the vertical stabilizer's main and aft spars to extend past the bottom of the vertical stabilizer and jut out span-wise into slots in the central ribs of the horizontal stabilizer. I permanently bonded the spar to the ribs using epoxy.</span></li>
+                  <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>I designed the spars to be 1/8in balsa and the ribs to be 1/8in balsa with a 1/16in plywood sandwich.</span></li>
+                  <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Designed 2 drop downs from the central ribs that sandwich each side of the boom and integrate via 2 bolts (1 per drop down) securely fastened with Loctite. Reduced integration hardware from 4 bolts to 2.</span></li>
+                  <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Added a tail fairing between the front of the horizontal stabilizer and vertical stabilizer to minimize induced drag.</span></li>
+                  <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Replaced CF D-box skin with 1/32in balsa to reduce weight.</span></li>
+                  <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Overall, I reduced the total empennage weight by 9.5% by removing integration hardware, added skin weight, and by making structurally-driven lightening cutouts.</span></li>
+                </ul>
               </div>
 
               <div className="space-y-4">
