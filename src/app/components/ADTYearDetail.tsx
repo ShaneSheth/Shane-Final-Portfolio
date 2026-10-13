@@ -386,10 +386,16 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
             </section>
 
             <section className="space-y-6">
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <h2 className="text-3xl">V3 Empennage Redesign</h2>
                 <p className="text-neutral-600 leading-relaxed">
-                  Detailed design rationale, tradeoffs, and iteration notes will be added here.
+                  The V3 empennage redesign focused on simplifying aircraft integration, improving the structural load path into the tail boom, and reducing weight on an aircraft that was highly sensitive to empty mass. The previous empennage used three separately integrated components, so I redesigned the tail around a single integrated structure mounted to the tail boom at two locations.
+                </p>
+                <p className="text-neutral-600 leading-relaxed">
+                  The new layout used extended vertical-stabilizer spars tied into the horizontal-stabilizer root rib, with fiberglass-plywood sandwich hardpoints at the primary attachment locations. I also incorporated a 4° horizontal-stabilizer angle of incidence and a tail fairing to improve the aerodynamic integration of the tail assembly.
+                </p>
+                <p className="text-neutral-600 leading-relaxed">
+                  Weight reduction was a major design driver throughout the iteration. I reduced empennage mass by 9.5% by removing unnecessary material through structurally driven cutouts, minimizing integration hardware, and replacing the carbon-fiber D-box skin with 1/32&quot; balsa where the added composite stiffness was not required. The drawing package below documents the final internal rib-and-spar layout, reinforcements, rudder integration, and assembly geometry.
                 </p>
               </div>
 
