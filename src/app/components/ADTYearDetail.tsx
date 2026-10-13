@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router";
 import { ArrowLeft, FileText } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
@@ -6,6 +7,7 @@ type YearKey = "2026-2027" | "2025-2026";
 
 export function ADTYearDetail({ year }: { year: YearKey }) {
   const isCurrent = year === "2026-2027";
+  const [selectedPlane, setSelectedPlane] = useState<"v1" | "summer">("v1");
 
   return (
     <div className="min-h-screen py-32 px-8">
@@ -39,147 +41,170 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
 
         {isCurrent ? (
           <>
-            <section className="space-y-3 pt-8 border-t border-neutral-200">
-              <p className="text-sm uppercase tracking-wide text-neutral-500">Competition Plane</p>
-              <h2 className="text-4xl">V1 Competition Plane</h2>
-              <p className="text-lg text-neutral-600 leading-relaxed">
-                Configuration development for the 2026–2027 competition aircraft.
-              </p>
-            </section>
-
-            <section className="space-y-8">
-              <div className="space-y-3">
-                <h2 className="text-3xl">Configuration Downselects</h2>
+            <div className="space-y-3">
+              <p className="text-sm uppercase tracking-wide text-neutral-500">Aircraft</p>
+              <div className="flex flex-wrap gap-3">
+                <Button
+                  variant={selectedPlane === "v1" ? "default" : "outline"}
+                  onClick={() => setSelectedPlane("v1")}
+                >
+                  V1 Competition Plane
+                </Button>
+                <Button
+                  variant={selectedPlane === "summer" ? "default" : "outline"}
+                  onClick={() => setSelectedPlane("summer")}
+                >
+                  Summer Plane
+                </Button>
               </div>
+            </div>
 
-              <div className="space-y-3">
-                <h2 className="text-3xl">Outer Mold Line (OML)</h2>
-              </div>
+            {selectedPlane === "v1" ? (
+              <>
+                <section className="space-y-3 pt-8 border-t border-neutral-200">
+                  <p className="text-sm uppercase tracking-wide text-neutral-500">Competition Plane</p>
+                  <h2 className="text-4xl">V1 Competition Plane</h2>
+                  <p className="text-lg text-neutral-600 leading-relaxed">
+                    Configuration development for the 2026–2027 competition aircraft.
+                  </p>
+                </section>
 
-              <div className="space-y-3">
-                <h2 className="text-3xl">Mass Properties & Balancing</h2>
-              </div>
-            </section>
+                <section className="space-y-8">
+                  <div className="space-y-3">
+                    <h2 className="text-3xl">Configuration Downselects</h2>
+                  </div>
 
-            <section className="space-y-3">
-              <p className="text-sm uppercase tracking-wide text-neutral-500">Summer Plane</p>
-              <h2 className="text-4xl">SunSCreen</h2>
-              <p className="text-lg text-neutral-600 leading-relaxed">
-                The work below documents my configuration, integration, and mass-properties work on the 2026 summer aircraft. Future V1 and later aircraft work will be added as the 2026–2027 design cycle progresses.
-              </p>
-            </section>
+                  <div className="space-y-3">
+                    <h2 className="text-3xl">Outer Mold Line (OML)</h2>
+                  </div>
 
-            <section className="space-y-8">
-              <h2 className="text-3xl">Current Work</h2>
-              <div className="space-y-6">
-                <div className="space-y-3">
-                  <h3 className="text-xl font-semibold">Aircraft Configuration & Airframe Design</h3>
-                  <ul className="space-y-2 text-neutral-600 leading-relaxed">
-                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Lead high-level aircraft configuration downselects for a 30+ member design team, determining aircraft architecture, wing and payload positioning, and propulsion, tail, and fuselage configuration.</span></li>
-                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Designed the aircraft outer mold line by balancing aerodynamic, structural, performance, landing-gear, and payload requirements, and determining tradeoffs to blend competing subsystem constraints into a single manufacturable airframe.</span></li>
-                  </ul>
-                </div>
+                  <div className="space-y-3">
+                    <h2 className="text-3xl">Mass Properties & Balancing</h2>
+                  </div>
+                </section>
+              </>
+            ) : (
+              <>
+                <section className="space-y-3 pt-8 border-t border-neutral-200">
+                  <p className="text-sm uppercase tracking-wide text-neutral-500">Summer Plane</p>
+                  <h2 className="text-4xl">SunSCreen</h2>
+                  <p className="text-lg text-neutral-600 leading-relaxed">
+                    The work below documents my configuration, integration, and mass-properties work on the 2026 summer aircraft.
+                  </p>
+                </section>
 
-                <div className="space-y-3">
-                  <h3 className="text-xl font-semibold">Full-Aircraft CAD & Integration</h3>
-                  <ul className="space-y-2 text-neutral-600 leading-relaxed">
-                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Owned full-aircraft CAD integration through the complete design cycle, assembling 7 aircraft subsystems in SolidWorks and translating finalized geometry into build drawings, laser-cut documents, and molds for manufacturing.</span></li>
-                  </ul>
-                </div>
+                <section className="space-y-8">
+                  <h2 className="text-3xl">Current Work</h2>
+                  <div className="space-y-6">
+                    <div className="space-y-3">
+                      <h3 className="text-xl font-semibold">Aircraft Configuration & Airframe Design</h3>
+                      <ul className="space-y-2 text-neutral-600 leading-relaxed">
+                        <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Lead high-level aircraft configuration downselects for a 30+ member design team, determining aircraft architecture, wing and payload positioning, and propulsion, tail, and fuselage configuration.</span></li>
+                        <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Designed the aircraft outer mold line by balancing aerodynamic, structural, performance, landing-gear, and payload requirements, and determining tradeoffs to blend competing subsystem constraints into a single manufacturable airframe.</span></li>
+                      </ul>
+                    </div>
 
-                <div className="space-y-3">
-                  <h3 className="text-xl font-semibold">Mass Properties & Layout</h3>
-                  <ul className="space-y-2 text-neutral-600 leading-relaxed">
-                    <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Working through internal component placement, center-of-gravity targets, static margin requirements, and packaging constraints as the configuration matures.</span></li>
-                  </ul>
-                </div>
-              </div>
-            </section>
+                    <div className="space-y-3">
+                      <h3 className="text-xl font-semibold">Full-Aircraft CAD & Integration</h3>
+                      <ul className="space-y-2 text-neutral-600 leading-relaxed">
+                        <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Owned full-aircraft CAD integration through the complete design cycle, assembling 7 aircraft subsystems in SolidWorks and translating finalized geometry into build drawings, laser-cut documents, and molds for manufacturing.</span></li>
+                      </ul>
+                    </div>
 
-            <section className="space-y-6">
-              <div className="space-y-2">
-                <h2 className="text-3xl">SunSCreen CAD</h2>
-                <p className="text-neutral-600 leading-relaxed">
-                  2026–2027 summer aircraft CAD showing the current full-aircraft configuration and major external geometry.
-                </p>
-              </div>
+                    <div className="space-y-3">
+                      <h3 className="text-xl font-semibold">Mass Properties & Layout</h3>
+                      <ul className="space-y-2 text-neutral-600 leading-relaxed">
+                        <li className="flex gap-3"><span className="text-neutral-900 mt-1">•</span><span>Working through internal component placement, center-of-gravity targets, static margin requirements, and packaging constraints as the configuration matures.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
 
-              <div className="space-y-6">
-                <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
-                  <img
-                    src="https://i.imgur.com/b9DJywJ.png"
-                    alt="SunSCreen aircraft CAD isometric view"
-                    className="w-full h-auto"
-                  />
-                </div>
+                <section className="space-y-6">
+                  <div className="space-y-2">
+                    <h2 className="text-3xl">SunSCreen CAD</h2>
+                    <p className="text-neutral-600 leading-relaxed">
+                      2026–2027 summer aircraft CAD showing the current full-aircraft configuration and major external geometry.
+                    </p>
+                  </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-6">
+                    <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                      <img
+                        src="https://i.imgur.com/b9DJywJ.png"
+                        alt="SunSCreen aircraft CAD isometric view"
+                        className="w-full h-auto"
+                      />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                        <img
+                          src="https://i.imgur.com/yBcBEt1.png"
+                          alt="SunSCreen aircraft CAD top view"
+                          className="w-full h-auto"
+                        />
+                      </div>
+                      <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
+                        <img
+                          src="https://i.imgur.com/803jKZf.png"
+                          alt="SunSCreen aircraft CAD front view"
+                          className="w-full h-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section className="space-y-6">
+                  <div className="space-y-2">
+                    <h2 className="text-3xl">Configuration Downselects</h2>
+                    <p className="text-neutral-600 leading-relaxed">
+                      Representative trade studies used to compare major aircraft configuration decisions during the summer design process.
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {[
+                      ["https://i.imgur.com/pS7SzYx.png", "SunSCreen configuration downselect 1"],
+                      ["https://i.imgur.com/YrYSEcv.png", "SunSCreen configuration downselect 2"],
+                      ["https://i.imgur.com/q2p5kA5.png", "SunSCreen configuration downselect 3"],
+                      ["https://i.imgur.com/gndaWNg.png", "SunSCreen configuration downselect 4"],
+                      ["https://i.imgur.com/jK1EaGP.png", "SunSCreen configuration downselect 5"],
+                    ].map(([src, alt], index) => (
+                      <div
+                        key={src}
+                        className={`rounded-xl overflow-hidden border border-neutral-200 bg-white ${index === 4 ? "md:col-span-2" : ""}`}
+                      >
+                        <img src={src} alt={alt} className="w-full h-auto" />
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+                <section className="space-y-6">
+                  <div className="space-y-2">
+                    <h2 className="text-3xl">Mass Properties & Balancing</h2>
+                    <div className="space-y-4 text-neutral-600 leading-relaxed">
+                      <p>
+                        I use a balancing spreadsheet to evaluate aircraft mass distribution across different mission configurations. The sheet calculates each component’s moment about a common aircraft node and sums those moments to determine the aircraft center of gravity. Variable cells represent mission-dependent payload and component configurations, allowing multiple missions to be evaluated within one model rather than using separate spreadsheets. I use the sheet to adjust component placement to achieve the target CG and static margin while also adjusting nose length and minimizing required ballast.
+                      </p>
+                      <p>
+                        Early component weights are estimated by comparing surface-area-to-weight ratios from previous aircraft with the current geometry. As the configuration develops, updated mass and location estimates are used to continually reassess aircraft balance and packaging.
+                      </p>
+                    </div>
+                  </div>
+
                   <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
                     <img
-                      src="https://i.imgur.com/yBcBEt1.png"
-                      alt="SunSCreen aircraft CAD top view"
+                      src="https://i.imgur.com/2TiR2jq.png"
+                      alt="SunSCreen aircraft balancing spreadsheet"
                       className="w-full h-auto"
                     />
                   </div>
-                  <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
-                    <img
-                      src="https://i.imgur.com/803jKZf.png"
-                      alt="SunSCreen aircraft CAD front view"
-                      className="w-full h-auto"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section className="space-y-6">
-              <div className="space-y-2">
-                <h2 className="text-3xl">Configuration Downselects</h2>
-                <p className="text-neutral-600 leading-relaxed">
-                  Representative trade studies used to compare major aircraft configuration decisions during the summer design process.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {[
-                  ["https://i.imgur.com/pS7SzYx.png", "SunSCreen configuration downselect 1"],
-                  ["https://i.imgur.com/YrYSEcv.png", "SunSCreen configuration downselect 2"],
-                  ["https://i.imgur.com/q2p5kA5.png", "SunSCreen configuration downselect 3"],
-                  ["https://i.imgur.com/gndaWNg.png", "SunSCreen configuration downselect 4"],
-                  ["https://i.imgur.com/jK1EaGP.png", "SunSCreen configuration downselect 5"],
-                ].map(([src, alt], index) => (
-                  <div
-                    key={src}
-                    className={`rounded-xl overflow-hidden border border-neutral-200 bg-white ${index === 4 ? "md:col-span-2" : ""}`}
-                  >
-                    <img src={src} alt={alt} className="w-full h-auto" />
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            <section className="space-y-6">
-              <div className="space-y-2">
-                <h2 className="text-3xl">Mass Properties & Balancing</h2>
-                <div className="space-y-4 text-neutral-600 leading-relaxed">
-                  <p>
-                    I use a balancing spreadsheet to evaluate aircraft mass distribution across different mission configurations. The sheet calculates each component’s moment about a common aircraft node and sums those moments to determine the aircraft center of gravity. Variable cells represent mission-dependent payload and component configurations, allowing multiple missions to be evaluated within one model rather than using separate spreadsheets. I use the sheet to adjust component placement to achieve the target CG and static margin while also adjusting nose length and minimizing required ballast.
-                  </p>
-                  <p>
-                    Early component weights are estimated by comparing surface-area-to-weight ratios from previous aircraft with the current geometry. As the configuration develops, updated mass and location estimates are used to continually reassess aircraft balance and packaging.
-                  </p>
-                </div>
-              </div>
-
-              <div className="rounded-xl overflow-hidden border border-neutral-200 bg-white">
-                <img
-                  src="https://i.imgur.com/2TiR2jq.png"
-                  alt="SunSCreen aircraft balancing spreadsheet"
-                  className="w-full h-auto"
-                />
-              </div>
-            </section>
-
+                </section>
+              </>
+            )}
           </>
         ) : (
           <>
