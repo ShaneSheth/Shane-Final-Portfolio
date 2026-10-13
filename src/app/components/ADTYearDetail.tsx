@@ -84,8 +84,32 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
                         ["https://i.imgur.com/exB7KJI.jpg", "V1 outer mold line view 4"],
                         ["https://i.imgur.com/wiBHOt1.jpg", "V1 outer mold line view 5"],
                         ["https://i.imgur.com/fAXGMfb.jpg", "V1 outer mold line view 6"],
-                        ["https://i.imgur.com/a7LbJga.jpg", "V1 outer mold line view 7"],
-                        ["https://i.imgur.com/wQuBNp6.jpg", "V1 outer mold line view 8"],
+                      ].map(([src, alt]) => (
+                        <div
+                          key={src}
+                          className="rounded-xl overflow-hidden border border-neutral-200 bg-white"
+                        >
+                          <img src={src} alt={alt} className="w-full h-auto" />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div className="space-y-3">
+                      <h2 className="text-3xl">Design Considerations</h2>
+                      <p className="text-neutral-600 leading-relaxed">
+                        Lofted fuselage OML using the fuselage top and bottom splines and the maximum half-breadth line as guide curves, and rho value driven conics at 9 stations along the x-axis of the fuselage. Used zebra stripes, curvature display, and curvature combs to refine smoothness of loft.
+                      </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {[
+                        ["https://i.imgur.com/lnNq6Ay.jpg", "V1 design consideration view 1"],
+                        ["https://i.imgur.com/dviRjCt.jpg", "V1 design consideration view 2"],
+                        ["https://i.imgur.com/cK73wSE.jpg", "V1 design consideration view 3"],
+                        ["https://i.imgur.com/a7LbJga.jpg", "V1 design consideration view 4"],
+                        ["https://i.imgur.com/wQuBNp6.jpg", "V1 design consideration view 5"],
                       ].map(([src, alt]) => (
                         <div
                           key={src}
