@@ -74,8 +74,27 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
                     <h2 className="text-3xl">Configuration Downselects</h2>
                   </div>
 
-                  <div className="space-y-3">
+                  <div className="space-y-6">
                     <h2 className="text-3xl">Outer Mold Line (OML)</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {[
+                        ["https://i.imgur.com/caNlD57.jpg", "V1 outer mold line view 1"],
+                        ["https://i.imgur.com/tdeLZ4H.jpg", "V1 outer mold line view 2"],
+                        ["https://i.imgur.com/1t9WFqp.jpg", "V1 outer mold line view 3"],
+                        ["https://i.imgur.com/exB7KJI.jpg", "V1 outer mold line view 4"],
+                        ["https://i.imgur.com/wiBHOt1.jpg", "V1 outer mold line view 5"],
+                        ["https://i.imgur.com/fAXGMfb.jpg", "V1 outer mold line view 6"],
+                        ["https://i.imgur.com/a7LbJga.jpg", "V1 outer mold line view 7"],
+                        ["https://i.imgur.com/wQuBNp6.jpg", "V1 outer mold line view 8"],
+                      ].map(([src, alt]) => (
+                        <div
+                          key={src}
+                          className="rounded-xl overflow-hidden border border-neutral-200 bg-white"
+                        >
+                          <img src={src} alt={alt} className="w-full h-auto" />
+                        </div>
+                      ))}
+                    </div>
                   </div>
 
                   <div className="space-y-3">
