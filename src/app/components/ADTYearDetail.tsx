@@ -256,6 +256,32 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
 
                 <section className="space-y-6">
                   <div className="space-y-2">
+                    <h2 className="text-3xl">Configuration Downselects</h2>
+                    <p className="text-neutral-600 leading-relaxed">
+                      Representative trade studies used to compare major aircraft configuration decisions during the summer design process.
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {[
+                      ["https://i.imgur.com/pS7SzYx.png", "SunSCreen configuration downselect 1"],
+                      ["https://i.imgur.com/YrYSEcv.png", "SunSCreen configuration downselect 2"],
+                      ["https://i.imgur.com/q2p5kA5.png", "SunSCreen configuration downselect 3"],
+                      ["https://i.imgur.com/gndaWNg.png", "SunSCreen configuration downselect 4"],
+                      ["https://i.imgur.com/jK1EaGP.png", "SunSCreen configuration downselect 5"],
+                    ].map(([src, alt], index) => (
+                      <div
+                        key={src}
+                        className={`rounded-xl overflow-hidden border border-neutral-200 bg-white ${index === 4 ? "md:col-span-2" : ""}`}
+                      >
+                        <img src={src} alt={alt} className="w-full h-auto" />
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+                <section className="space-y-6">
+                  <div className="space-y-2">
                     <h2 className="text-3xl">SunSCreen CAD</h2>
                     <p className="text-neutral-600 leading-relaxed">
                       2026–2027 summer aircraft CAD showing the current full-aircraft configuration and major external geometry.
@@ -287,32 +313,6 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
                         />
                       </div>
                     </div>
-                  </div>
-                </section>
-
-                <section className="space-y-6">
-                  <div className="space-y-2">
-                    <h2 className="text-3xl">Configuration Downselects</h2>
-                    <p className="text-neutral-600 leading-relaxed">
-                      Representative trade studies used to compare major aircraft configuration decisions during the summer design process.
-                    </p>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {[
-                      ["https://i.imgur.com/pS7SzYx.png", "SunSCreen configuration downselect 1"],
-                      ["https://i.imgur.com/YrYSEcv.png", "SunSCreen configuration downselect 2"],
-                      ["https://i.imgur.com/q2p5kA5.png", "SunSCreen configuration downselect 3"],
-                      ["https://i.imgur.com/gndaWNg.png", "SunSCreen configuration downselect 4"],
-                      ["https://i.imgur.com/jK1EaGP.png", "SunSCreen configuration downselect 5"],
-                    ].map(([src, alt], index) => (
-                      <div
-                        key={src}
-                        className={`rounded-xl overflow-hidden border border-neutral-200 bg-white ${index === 4 ? "md:col-span-2" : ""}`}
-                      >
-                        <img src={src} alt={alt} className="w-full h-auto" />
-                      </div>
-                    ))}
                   </div>
                 </section>
 
