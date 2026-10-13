@@ -395,10 +395,25 @@ export function ADTYearDetail({ year }: { year: YearKey }) {
 
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold">Drawing Package</h3>
-                <div className="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-10 text-center">
-                  <p className="text-neutral-600">
-                    V3 empennage drawing package PDF will be embedded here.
-                  </p>
+                <div className="w-full aspect-[8.5/11] rounded-xl overflow-hidden shadow-lg border border-neutral-200 bg-white">
+                  <iframe
+                    src="/V3_VStab_Drawing_YS.pdf"
+                    title="V3 Empennage Drawing Package"
+                    className="w-full h-full"
+                    style={{ border: "none" }}
+                  />
+                </div>
+                <div className="text-center">
+                  <a
+                    href="/V3_VStab_Drawing_YS.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline">
+                      <FileText className="w-4 h-4 mr-2" />
+                      Open Drawing Package in New Tab
+                    </Button>
+                  </a>
                 </div>
               </div>
             </section>
